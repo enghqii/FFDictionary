@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "FFDictionary",
+    "version": "1.0",
+
+    "description": "",
+
+    "icons": {
+        "48": "icons/dict-48.png"
+    },
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/dict-32.png",
+        "default_title": "Popup Dictionary",
+        "default_popup": "src/popup/dict.html"
+    },
+
+    "background": {
+        "scripts": ["src/background.js"]
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["src/content.js"]
+        }
+    ]
+}

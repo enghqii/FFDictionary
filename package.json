@@ -1,0 +1,7 @@
+{
+  "name": "ff_dictionary",
+  "version": "1.0.0",
+  "devDependencies": {
+    "web-ext-types": "^3.0.0"
+  }
+}
