@@ -1,5 +1,7 @@
 import { Message, MessageType } from "./message"
 
+const BASE_URL: string = "https://www.merriam-webster.com/dictionary/";
+
 const iframe  = document.getElementById("dict_iframe");
 const log     = document.getElementById("log");
 
@@ -11,7 +13,7 @@ browser.runtime.onMessage.addListener((msg: Message) => {
             log.innerText = msg.keyword;
 
             if (iframe instanceof HTMLIFrameElement)
-                (iframe as HTMLIFrameElement).src = "https://www.merriam-webster.com/dictionary/" + msg.keyword;
+                (iframe as HTMLIFrameElement).src = BASE_URL + msg.keyword;
         }
         break;
     }
