@@ -16,17 +16,17 @@
     "browser_action": {
         "default_icon": "icons/dict-32.png",
         "default_title": "Popup Dictionary",
-        "default_popup": "src/popup/dict.html"
+        "default_popup": "./popup/dict.html"
     },
 
     "background": {
-        "scripts": ["src/background.js"]
+        "scripts": ["./dist/background.js"]
     },
 
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "js": ["src/content.js"]
+            "js": ["./dist/content.js"]
         }
     ]
 }

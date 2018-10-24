@@ -1,7 +1,14 @@
 {
   "name": "ff_dictionary",
   "version": "1.0.0",
+  "scripts": {
+    "webpack": "webpack"
+  },
   "devDependencies": {
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "webpack": "^4.22.0",
     "web-ext-types": "^3.0.0"
   }
 }
