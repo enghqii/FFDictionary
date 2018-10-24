@@ -1,3 +1,7 @@
+body {
+    width: 300pt;
+}
+
 iframe {
     display: block;
     width: 100%;
